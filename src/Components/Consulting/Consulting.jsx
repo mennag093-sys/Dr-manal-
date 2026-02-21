@@ -40,7 +40,7 @@ const Consulting = () => {
       <div className='flex flex-col gap-1'>
         <label className=' text-[#6B7280] text-sm'>البريد الإلكتروني</label>
         <div className='relative'>
-          <input type="email" placeholder="example@mail.com" className='w-full p-4 border rounded-xl text-right pr-10 focus:outline-[#CE9F2B] text-sm' />
+          <input type="email" placeholder="البريد الإلكتروني" className='w-full p-4 border rounded-xl text-right pr-10 focus:outline-[#CE9F2B] text-sm' />
           <Mail className='absolute left-4 top-1/2 -translate-y-1/2 text-[#87A1BD]' size={20} strokeWidth={4}/>
         </div>
       </div>

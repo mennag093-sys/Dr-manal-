@@ -1,6 +1,6 @@
 import React from 'react';
 import Dr from "../../assets/dr 1 (1).png";
-import CustomButton from '../CustomButton';
+import { useNavigate } from 'react-router-dom';
 import VideoCard from '../VideoCard/VideoCard';
 import dr1 from '../../assets/dr_m1.png'
 import dr2 from '../../assets/dr_m2.png'
@@ -9,6 +9,7 @@ import dr4 from '../../assets/dr_m4.png'
 import Arr from './Arr';
 import person2 from "../../assets/Frame 19.png";
 const DoctorProfile = () => {
+  const navigate = useNavigate();
   const videosData = [
     { id: 1, youtubeId: "e21SWXXrqsM", title: "ازاى اوظف الطاقة لتقليل وزنى", lecturer: "منال الديب", duration: "2:15", views: 1520 },
     { id: 2, youtubeId: "Su6nNSUJScw", title: "كيفية تحويل الطاقه السلبية إلي طاقة إيجابية ", lecturer: "منال الديب", duration: "08:20", views: 980 },
@@ -49,7 +50,7 @@ const DoctorProfile = () => {
           </div>
 <div className="flex flex-row gap-6 mt-12 w-full justify-start items-center">
   <button 
-    onClick={() => console.log("حجز استشارة")}
+    onClick={() => navigate('/consulting')}
     className="group flex flex-row items-center justify-between gap-4 bg-[#CE9F2B] text-black px-8 py-4 rounded font-bold min-w-[330px] shadow-lg hover:bg-[#b88e26] transition-all active:scale-95"
   >
     <span className="text-lg">حجز استشارة</span>
